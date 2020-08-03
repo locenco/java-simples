@@ -1,9 +1,10 @@
-package top.macondo.java.springboot.method_execute_order;
+package top.macondo.java.others.lifecycle;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+
 /**
  * ParentBean static
  *  ParentBean construct
@@ -16,23 +17,13 @@ import javax.annotation.PostConstruct;
  *  SonBean afterPropertiesSet
  */
 @Component
-public class ParentBean implements InitializingBean{
+public class ParentBean{
 	static {
 		System.out.println("ParentBean static");
 	}
 	
 	public ParentBean() {
 		System.out.println("ParentBean construct");
-	}
-	
-	@PostConstruct
-	public void init(){
-		System.out.println("ParentBean init");
-	}
-
-	@Override
-	public void afterPropertiesSet() throws Exception {
-		System.out.println("ParentBean afterPropertiesSet");
 	}
 
 }
