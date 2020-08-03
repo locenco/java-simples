@@ -11,6 +11,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
+ * 执行顺序从上往下
  * @author: zhangchong
  * @Date: 15:21
  **/
@@ -19,11 +20,18 @@ public class LifeCycle implements InitializingBean, DisposableBean, ApplicationC
 	static {
 		System.out.println("static");
 	}
-
+	{
+		System.out.println("code block");
+	}
 	public LifeCycle() {
 		System.out.println("Constructor no params");
 	}
 
+	/**
+	 * #######  aware接口
+	 * @param applicationContext
+	 * @throws BeansException
+	 */
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		System.out.println("ApplicationContextAware.setApplicationContext");
