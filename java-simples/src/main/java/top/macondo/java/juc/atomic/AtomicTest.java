@@ -1,5 +1,6 @@
 package top.macondo.java.juc.atomic;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.concurrent.ExecutorService;
@@ -28,7 +29,8 @@ public class AtomicTest {
 		}
 		try {
 			executorService.awaitTermination(10, TimeUnit.SECONDS);
-			System.out.println(atomicInteger.get()); // = 10000
+			Assert.assertTrue (atomicInteger.get() == 10000); // = 10000
+			Assert.assertTrue (a == 10000); // <= 10000
 			System.out.println(a);   //<= 10000
 		} catch (InterruptedException e) {
 			e.printStackTrace();
