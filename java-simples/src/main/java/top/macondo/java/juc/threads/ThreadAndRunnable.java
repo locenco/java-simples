@@ -1,4 +1,4 @@
-package top.macondo.java.threads;
+package top.macondo.java.juc.threads;
 
 import org.junit.Assert;
 import org.junit.Test;

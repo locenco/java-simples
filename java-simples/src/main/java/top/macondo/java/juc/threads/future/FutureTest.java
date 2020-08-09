@@ -1,4 +1,4 @@
-package top.macondo.java.juc.future;
+package top.macondo.java.juc.threads.future;
 
 import org.junit.Test;
 
@@ -46,7 +46,7 @@ public class FutureTest {
 
         //方式2 通过 FutureTask 包装异步线程的返回，返回结果在 FutureTask 中获取而不是 在提交线程中
         FutureTask<Integer> task = new FutureTask<>(new NewCallableTask());
-        executorService.submit(task);
+        executorService.execute(task);
         //-------------方式2--------------
 
         Integer value = null;

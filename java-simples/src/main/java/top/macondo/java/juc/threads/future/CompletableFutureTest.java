@@ -1,4 +1,4 @@
-package top.macondo.java.juc.future;
+package top.macondo.java.juc.threads.future;
 
 import org.junit.Test;
 
