@@ -1,10 +1,13 @@
-package top.macondo.java.juc.threads.activeobject;
+package top.macondo.java.juc.threads.activeobject.message;
+
+import top.macondo.java.juc.threads.activeobject.result.RealResult;
+import top.macondo.java.juc.threads.activeobject.result.Result;
 
 /**
  * Servant 定义了 Active Object 的行为和状态，它是 Proxy 所定义的接口的事实实现。
  * 执行实际处理的类（实现了ActiveObject接口）
  */
-class Servant implements ActiveObject {
+public class Servant implements ActiveObject {
 
     @Override
     public void displayString(String text) {

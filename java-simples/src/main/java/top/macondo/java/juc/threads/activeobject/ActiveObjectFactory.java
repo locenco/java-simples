@@ -1,5 +1,8 @@
 package top.macondo.java.juc.threads.activeobject;
 
+import top.macondo.java.juc.threads.activeobject.message.ActiveObject;
+import top.macondo.java.juc.threads.activeobject.message.Servant;
+
 public final class ActiveObjectFactory {
 
     private ActiveObjectFactory() {

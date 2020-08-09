@@ -1,5 +1,7 @@
 package top.macondo.java.juc.threads.activeobject;
 
+import top.macondo.java.juc.threads.activeobject.message.ActiveObject;
+
 public class DisplayClientThread extends Thread {
     private final ActiveObject activeObject;
 

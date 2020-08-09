@@ -1,4 +1,10 @@
-package top.macondo.java.juc.threads.activeobject;
+package top.macondo.java.juc.threads.activeobject.message;
+
+import top.macondo.java.juc.threads.activeobject.message.MethodRequest;
+import top.macondo.java.juc.threads.activeobject.message.Servant;
+import top.macondo.java.juc.threads.activeobject.result.FutureResult;
+import top.macondo.java.juc.threads.activeobject.result.Result;
+
 /**
  *    {@link ActiveObject#makeString(int, char)}
  */

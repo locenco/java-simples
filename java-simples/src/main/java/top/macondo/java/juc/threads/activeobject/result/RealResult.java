@@ -1,4 +1,4 @@
-package top.macondo.java.juc.threads.activeobject;
+package top.macondo.java.juc.threads.activeobject.result;
 
 public class RealResult implements Result {
     private final Object resultValue;

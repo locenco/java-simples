@@ -1,4 +1,7 @@
-package top.macondo.java.juc.threads.activeobject;
+package top.macondo.java.juc.threads.activeobject.message;
+
+import top.macondo.java.juc.threads.activeobject.message.MethodRequest;
+import top.macondo.java.juc.threads.activeobject.message.Servant;
 
 public class DisplayStringRequest extends MethodRequest {
     private final String text;

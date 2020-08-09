@@ -1,4 +1,6 @@
-package top.macondo.java.juc.threads.activeobject;
+package top.macondo.java.juc.threads.activeobject.result;
+
+import top.macondo.java.juc.threads.activeobject.result.Result;
 
 public class FutureResult implements Result {
     private Result result;

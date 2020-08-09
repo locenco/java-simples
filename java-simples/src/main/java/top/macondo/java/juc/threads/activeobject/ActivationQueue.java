@@ -1,5 +1,7 @@
 package top.macondo.java.juc.threads.activeobject;
 
+import top.macondo.java.juc.threads.activeobject.message.MethodRequest;
+
 import java.util.LinkedList;
 
 public class ActivationQueue {

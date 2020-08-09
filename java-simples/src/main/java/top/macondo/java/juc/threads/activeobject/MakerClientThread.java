@@ -1,5 +1,8 @@
 package top.macondo.java.juc.threads.activeobject;
 
+import top.macondo.java.juc.threads.activeobject.message.ActiveObject;
+import top.macondo.java.juc.threads.activeobject.result.Result;
+
 public class MakerClientThread extends Thread {
     private final ActiveObject activeObject;
     private final char fillChar;
