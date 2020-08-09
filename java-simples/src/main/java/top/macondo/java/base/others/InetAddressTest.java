@@ -1,4 +1,4 @@
-package top.macondo.java.others;
+package top.macondo.java.base.others;
 
 import org.junit.Test;
 
