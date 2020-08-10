@@ -1,6 +1,8 @@
 package top.macondo.java.juc.threads.eventbus;
 
-import java.lang.reflect.InvocationTargetException;
+import top.macondo.java.juc.threads.eventbus.bus.Bus;
+import top.macondo.java.juc.threads.eventbus.subscribe.Subscriber;
+
 import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executor;
@@ -59,13 +61,13 @@ public class Dispatcher {
 		}
 	}
 
-	static Dispatcher newDispatcher(EventExceptionHandler exceptionHandler, Executor executor){
+	public static Dispatcher newDispatcher(EventExceptionHandler exceptionHandler, Executor executor){
 		return new Dispatcher(executor,exceptionHandler);
 	}
-	static Dispatcher seqDispatcher(EventExceptionHandler exceptionHandler){
+	public static Dispatcher seqDispatcher(EventExceptionHandler exceptionHandler){
 		return new Dispatcher(SEQ_EXECUTOR_SERVICE,exceptionHandler);
 	}
-	static Dispatcher preDispatcher(EventExceptionHandler exceptionHandler){
+	public static Dispatcher preDispatcher(EventExceptionHandler exceptionHandler){
 		return new Dispatcher(PRE_EXECUTOR_SERVICE,exceptionHandler);
 	}
 

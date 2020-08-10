@@ -1,6 +1,6 @@
 package top.macondo.java.juc.threads.eventbus.filemonitor;
 
-import top.macondo.java.juc.threads.eventbus.Subscribe;
+import top.macondo.java.juc.threads.eventbus.subscribe.Subscribe;
 
 /**
  * @author: zhangchong

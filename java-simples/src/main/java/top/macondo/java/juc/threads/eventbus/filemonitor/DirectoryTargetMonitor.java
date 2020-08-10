@@ -1,6 +1,6 @@
 package top.macondo.java.juc.threads.eventbus.filemonitor;
 
-import top.macondo.java.juc.threads.eventbus.EventBus;
+import top.macondo.java.juc.threads.eventbus.bus.EventBus;
 
 import java.io.IOException;
 import java.nio.file.*;

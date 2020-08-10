@@ -1,4 +1,4 @@
-package top.macondo.java.juc.threads.eventbus;
+package top.macondo.java.juc.threads.eventbus.bus;
 
 /**
  * @author: zhangchong

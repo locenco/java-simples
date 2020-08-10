@@ -1,5 +1,8 @@
 package top.macondo.java.juc.threads.eventbus;
 
+import top.macondo.java.juc.threads.eventbus.subscribe.Subscribe;
+import top.macondo.java.juc.threads.eventbus.subscribe.Subscriber;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
@@ -12,7 +15,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * @author: zhangchong
  * @Date: 2020/8/9 8:23
  **/
-class Registry {
+public class Registry {
 	private final ConcurrentHashMap<String, ConcurrentLinkedQueue<Subscriber>>
 	subscriberContainer = new ConcurrentHashMap<>();
 

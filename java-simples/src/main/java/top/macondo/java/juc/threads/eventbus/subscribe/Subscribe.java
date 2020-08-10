@@ -1,4 +1,4 @@
-package top.macondo.java.juc.threads.eventbus;
+package top.macondo.java.juc.threads.eventbus.subscribe;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
