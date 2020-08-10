@@ -1,4 +1,4 @@
-package top.macondo.java.juc.threads.eventbus.filemonitor;
+package top.macondo.java.juc.threads.eventbus.example.filemonitor;
 
 import lombok.Getter;
 
