@@ -1,8 +1,6 @@
-package top.macondo.java.others.lifecycle;
+package top.macondo.java.base.others.lifecycle;
 
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
 
 @Component
 public class SonBean  {

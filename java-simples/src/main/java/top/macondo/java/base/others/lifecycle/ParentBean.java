@@ -1,9 +1,6 @@
-package top.macondo.java.others.lifecycle;
+package top.macondo.java.base.others.lifecycle;
 
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
 
 /**
  * ParentBean static
