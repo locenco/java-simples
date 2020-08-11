@@ -1,4 +1,4 @@
-package top.macondo.netty.rpccore;
+package top.macondo.netty.rpccore.util;
 
 import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.ProtostuffIOUtil;

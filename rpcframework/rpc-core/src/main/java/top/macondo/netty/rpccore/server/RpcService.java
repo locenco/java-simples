@@ -1,4 +1,4 @@
-package top.macondo.netty.rpccore;
+package top.macondo.netty.rpccore.server;
 
 import org.springframework.stereotype.Component;
 

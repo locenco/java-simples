@@ -3,7 +3,7 @@ package top.macondo.netty.rpccore.handler;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import top.macondo.netty.rpccore.SerializationUtil;
+import top.macondo.netty.rpccore.util.SerializationUtil;
 
 /**
  * @author: zhangchong

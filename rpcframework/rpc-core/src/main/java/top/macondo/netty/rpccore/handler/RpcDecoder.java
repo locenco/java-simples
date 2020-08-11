@@ -3,8 +3,7 @@ package top.macondo.netty.rpccore.handler;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
-import top.macondo.netty.rpccore.pojo.RpcRequest;
-import top.macondo.netty.rpccore.SerializationUtil;
+import top.macondo.netty.rpccore.util.SerializationUtil;
 
 import java.util.List;
 
