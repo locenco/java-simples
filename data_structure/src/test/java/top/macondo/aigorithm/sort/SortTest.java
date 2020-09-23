@@ -53,6 +53,13 @@ public class SortTest {
 		int[] result = MergeSort.sortByReturn(randomArr);
 		assertEqualsResult(result);
 	}
+
+	@Test
+	public void testCountingSort() {
+		sort = new CountingSort();
+		sort.sort(randomArr);
+		assertEqualsResult(randomArr);
+	}
 	private void assertEqualsResult(int[] randomArr){
 		for (int i = 1; i <= 9; i++) {
 			assertEquals(randomArr[i-1], i * 10);
