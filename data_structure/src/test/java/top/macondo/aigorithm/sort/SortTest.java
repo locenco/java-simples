@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
  * @Date: 2020/9/22 15:04
  **/
 public class SortTest {
-	int[] randomArr = {40,70,50,30,80,90,10,20,60};
+	int[] randomArr = {40, 70, 50, 30, 80, 90, 10, 20, 60};
 
 	@Test
 	public void testHeapSort() {
@@ -35,6 +35,11 @@ public class SortTest {
 	@Test
 	public void testInsertSort(){
 		InsertSort.insertSort(randomArr);
+		assertEqualsResult(randomArr);
+	}
+	@Test
+	public void testShellSort(){
+		ShellSort.shellSort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 	private void assertEqualsResult(int[] randomArr){
