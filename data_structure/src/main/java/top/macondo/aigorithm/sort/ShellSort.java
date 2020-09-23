@@ -9,8 +9,9 @@ package top.macondo.aigorithm.sort;
  * @author: zhangchong
  * @Date: 2020/9/22 17:44
  **/
-public class ShellSort {
-	public static void shellSort(int[] arr) {
+public class ShellSort implements Sort{
+	@Override
+	public void sort(int[] arr) {
 		int n = arr.length;
 		int temp;
 		/**

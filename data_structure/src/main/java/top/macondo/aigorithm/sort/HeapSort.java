@@ -3,12 +3,13 @@ package top.macondo.aigorithm.sort;
 /**
  * 堆排
  */
-public class HeapSort {
+public class HeapSort implements Sort{
 
 	/**
 	 * 堆排序
 	 */
-	public static void heapSort(int[] arr) {
+	@Override
+	public void sort(int[] arr) {
 		int n = arr.length;
 		// 将待排序的序列构建成一个大顶堆
 		/**

@@ -10,36 +10,42 @@ import static org.junit.Assert.assertEquals;
  **/
 public class SortTest {
 	int[] randomArr = {40, 70, 50, 30, 80, 90, 10, 20, 60};
-
+	Sort sort;
 	@Test
 	public void testHeapSort() {
-		HeapSort.heapSort(randomArr);
+		sort = new HeapSort();
+		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 
 	@Test
 	public void testQuickSort(){
-		QuickSort.quickSort(randomArr);
+		sort = new QuickSort();
+		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 	@Test
 	public void testBubbleSort(){
-		BubbleSort.bubbleSort(randomArr);
+		sort = new BubbleSort();
+		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 	@Test
 	public void testSelectSort(){
-		SelectSort.selectSort(randomArr);
+		sort = new SelectSort();
+		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 	@Test
 	public void testInsertSort(){
-		InsertSort.insertSort(randomArr);
+		sort = new InsertSort();
+		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 	@Test
 	public void testShellSort(){
-		ShellSort.shellSort(randomArr);
+		sort = new ShellSort();
+		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
 	private void assertEqualsResult(int[] randomArr){

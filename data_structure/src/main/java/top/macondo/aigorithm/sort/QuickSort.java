@@ -4,9 +4,10 @@ package top.macondo.aigorithm.sort;
  * @author: zhangchong
  * @Date: 2020/9/22 15:51
  **/
-public class QuickSort {
+public class QuickSort implements Sort{
 
-	public static void quickSort(int[] arr){
+	@Override
+	public void sort(int[] arr){
 		sort(arr,0,arr.length - 1);
 	}
 	private static void sort(int[] arr, int left, int right){

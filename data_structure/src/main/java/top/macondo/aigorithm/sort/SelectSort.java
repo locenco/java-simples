@@ -7,8 +7,9 @@ package top.macondo.aigorithm.sort;
  * @author: zhangchong
  * @Date: 2020/9/22 16:49
  **/
-public class SelectSort {
-	public static void selectSort(int[] arr) {
+public class SelectSort implements Sort{
+	@Override
+	public void sort(int[] arr) {
 		int n = arr.length;
 		for (int i = 0; i < n - 1; i++) {
 			int min = i;

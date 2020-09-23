@@ -8,8 +8,9 @@ package top.macondo.aigorithm.sort;
  * @author: zhangchong
  * @Date: 2020/9/22 16:57
  **/
-public class InsertSort {
-	public static void insertSort(int[] arr) {
+public class InsertSort implements Sort{
+	@Override
+	public void sort(int[] arr) {
 		int n = arr.length;
 		//i是每次待插入的位置
 		for (int i = 1; i < n; i++) {
