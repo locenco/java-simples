@@ -60,6 +60,12 @@ public class SortTest {
 		sort.sort(randomArr);
 		assertEqualsResult(randomArr);
 	}
+	@Test
+	public void testBucketSort(){
+		sort = new BucketSort();
+		sort.sort(randomArr);
+		assertEqualsResult(randomArr);
+	}
 	private void assertEqualsResult(int[] randomArr){
 		for (int i = 1; i <= 9; i++) {
 			assertEquals(randomArr[i-1], i * 10);
