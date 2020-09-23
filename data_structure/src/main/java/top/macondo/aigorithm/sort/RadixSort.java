@@ -24,7 +24,7 @@ public class RadixSort implements Sort{
 		int suffixDigit = 1;
 		for (int i = 0; i < maxDigit; i++) {
 			//存储-9到9
-			int[][] counter = new int[prefixDigit * 2][0];
+			int[][] counter = new int[20][0];
 			for (int j = 0; j < arr.length; j++) {
 				//去头去尾后保留第i位的值，并加10，
 				int bucket = (arr[j] % prefixDigit) / suffixDigit + 10;
