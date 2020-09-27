@@ -297,6 +297,13 @@ public class Solution {
 		}
 	}
 
+	/**
+	 * 输入一个链表，输出该链表中倒数第k个结点。
+	 *
+	 * @param head
+	 * @param k
+	 * @return
+	 */
 	public static ListNode FindKthToTail(ListNode head, int k) {
 		int length = 0;
 		ListNode root = head;
@@ -360,23 +367,60 @@ public class Solution {
 
 	/**
 	 * 输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
+	 * {8,8,7,9,2,#,#,#,#,4,7},{8,9,2}
+	 * boolean result = false;
+	 * //当Tree1和Tree2都不为零的时候，才进行比较。否则直接返回false
+	 * if (root2 != null && root1 != null) {
+	 * //如果找到了对应Tree2的根节点的点
+	 * if(root1.val == root2.val){
+	 * //以这个根节点为为起点判断是否包含Tree2
+	 * result = doesTree1HaveTree2(root1,root2);
+	 * }
+	 * //如果找不到，那么就再去root的左儿子当作起点，去判断时候包含Tree2
+	 * if (!result) {
+	 * result = HasSubtree(root1.left,root2);
+	 * }
+	 * <p>
+	 * //如果还找不到，那么就再去root的右儿子当作起点，去判断时候包含Tree2
+	 * if (!result) {
+	 * result = HasSubtree(root1.right,root2);
+	 * }
+	 * }
+	 * //返回结果
+	 * return result;
 	 *
 	 * @param root1
 	 * @param root2
 	 * @return
 	 */
 	public boolean HasSubtree(TreeNode root1, TreeNode root2) {
-
-		if (root2 == null || root1 == null) {
-			return false;
+		boolean result = false;
+		if (root2 != null && root1 != null) {
+			if (root1.val == root2.val) {
+				result = judgeSubTree(root1, root2);
+			}
+			if (!result) {
+				result = HasSubtree(root1.left, root2);
+			}
+			if (!result) {
+				result = HasSubtree(root1.right, root2);
+			}
 		}
-		return judgeSubTree(root1, root2)
-				&& judgeSubTree(root1.left, root2)
-				&& judgeSubTree(root1.right, root2);
+		return result;
 	}
 
 	private boolean judgeSubTree(TreeNode root1, TreeNode root2) {
-		return false;
+
+		if (root2 == null) {
+			return true;
+		}
+		if (root1 == null) {
+			return false;
+		}
+		if (root1.val != root2.val) {
+			return false;
+		}
+		return judgeSubTree(root1.left, root2.left) && judgeSubTree(root1.right, root2.right);
 	}
 
 

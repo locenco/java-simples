@@ -34,7 +34,7 @@ public class LeetCode {
 		int y = matrix.length;
 		int[] borders = {0, y - 1, 0, x - 1};
 		int matrixSum = x * y;
-		ArrayList<Integer> result = new ArrayList<>();
+		ArrayList<Integer> result = new ArrayList<>(matrixSum);
 		printACircle(matrix, borders, result);
 		return result;
 	}
