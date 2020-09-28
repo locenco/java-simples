@@ -6,7 +6,7 @@ package top.macondo.aigorithm.leetcode;
  * @Date: 2020/9/25 10:29
  **/
 public class JZ17 {
-	public boolean HasSubtree(Solution.TreeNode root1, Solution.TreeNode root2) {
+	public boolean HasSubtree(TreeNode root1, TreeNode root2) {
 		boolean result = false;
 		if (root2 != null && root1 != null) {
 			if (root1.val == root2.val) {
@@ -22,7 +22,7 @@ public class JZ17 {
 		return result;
 	}
 
-	private boolean judgeSubTree(Solution.TreeNode root1, Solution.TreeNode root2) {
+	private boolean judgeSubTree(TreeNode root1, TreeNode root2) {
 
 		if (root2 == null) {
 			return true;
