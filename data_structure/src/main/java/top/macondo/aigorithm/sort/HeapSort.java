@@ -1,7 +1,7 @@
 package top.macondo.aigorithm.sort;
 
 /**
- * 堆排
+ * 堆排 O(nlogn)
  */
 public class HeapSort implements Sort{
 

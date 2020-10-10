@@ -1,6 +1,7 @@
 package top.macondo.aigorithm.sort;
 
 /**
+ * 快速排序 O(nlogn) 分治
  * @author: zhangchong
  * @Date: 2020/9/22 15:51
  **/

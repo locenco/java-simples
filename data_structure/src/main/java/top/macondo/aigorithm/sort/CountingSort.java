@@ -1,7 +1,7 @@
 package top.macondo.aigorithm.sort;
 
 /**
- * 计数排序
+ * 计数排序 O(n)
  *
  * @author: zhangchong
  * @Date: 2020/9/23 11:28

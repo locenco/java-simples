@@ -3,7 +3,7 @@ package top.macondo.aigorithm.sort;
 import java.util.Arrays;
 
 /**
- * 桶排序
+ * 桶排序 O(n)
  * @author: zhangchong
  * @Date: 2020/9/23 11:43
  **/
