@@ -66,14 +66,16 @@ public class MaximumSubArray {
 	 */
 	public int findMaxArray(int[] array) {
 		int maxSum = 0;
+		boolean sign = true;
 		int sum = 0;
 		for (int i = 0, length = array.length; i < length; i++) {
 			sum += array[i];
 			if (sum < array[i]) {
 				sum = array[i];
 			}
-			if (sum > maxSum) {
+			if (sum > maxSum || sign) {
 				maxSum = sum;
+				sign = false;
 			}
 		}
 		return maxSum;
