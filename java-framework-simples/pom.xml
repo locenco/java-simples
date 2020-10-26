@@ -10,6 +10,7 @@
 	</parent>
 	<artifactId>java-framework-simples</artifactId>
 	<name>java-framework-simples</name>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
@@ -20,7 +21,13 @@
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
 		</dependency>
-
-
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
 	</dependencies>
 </project>
