@@ -4,6 +4,10 @@ import java.util.Hashtable;
 import java.util.Map;
 
 /**
+ * 事件调度器
+ * 主要包含： 路由表、调度路由
+ * 1. 路由表存储消息和管道的kv。
+ * 2. 调度路由输入为消息，先找到对应管道，再进行处理和进一步调度
  * @author: zhangchong
  * @Date: 2020/8/8 22:34
  **/
