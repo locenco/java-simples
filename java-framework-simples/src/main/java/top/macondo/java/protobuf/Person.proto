@@ -1,4 +1,4 @@
-option java_outer_classname = "PersonEntity";//生成的数据访问类的类名
+  option java_outer_classname = "PersonEntity";//生成的数据访问类的类名
 message Person {
   required int32 id = 1;//同上
   required string name = 2;//必须字段，在后面的使用中必须为该段设置值

@@ -1,9 +1,5 @@
 package top.macondo.java.protobuf;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 /**
  * protoc[.exe] Person.proto --java_out=./
  */
@@ -13,7 +9,7 @@ import java.util.stream.Stream;
  * @Date: 2020/8/5 15:33
  **/
 public class ProtoBufTest {
-	public static void main(String[] args) throws IOException {
+	/*public static void main(String[] args) throws IOException {
 		PersonEntity.Person.Builder builder = PersonEntity.Person.newBuilder();
 		builder.setId(1);
 		builder.setName("zc");
@@ -30,5 +26,5 @@ public class ProtoBufTest {
 		PersonEntity.Person received = PersonEntity.Person.parseFrom(bytes);
 		System.out.println(received.toString());
 	}
-
+*/
 }
